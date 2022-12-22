@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="assets/style.css" />
         <title>Challenges</title>
     </head>
-    
+    <body>
+        <h1>Challenges</h1>
+        <p>Clink on the link to display the challenge</p>
+       <div class="popup" onclick="myFunction()">Challenge 1
+        <span class="popuptext" id="myPopup">This is the first challenge</span>
+    </div>
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>    
+    </body>
 </html>
